@@ -63,11 +63,11 @@ def main():
         if re.search("Coding In Python", doc):
             ai_expert_agent = agent.get_python_expert_agent(doc)
             ai_question_answer = task.create_python_question_answer_task(python_expert_agent, doc)
-            print("ai_expert_agent created")
+            print("python_expert_agent created")
         elif re.search("compact-guide-to-large-language-models", doc):
             python_expert_agent = agent.get_ai_expert_agent(doc)
             python_question_answer = task.create_ai_question_answer_task(python_expert_agent, doc)
-            print("python_expert_agent created")
+            print("ai_expert_agent created")
 
 
 if __name__ == "__main__":
